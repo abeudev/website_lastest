@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AboutController!{% endblock %}
+
+{% block body %}
+ <!-- Preload images start //-->
+    <div class="images-preloader" id="images-preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+<div id="wrapper">
+    <!-- Preload images end //-->
+    {{ include('/partials/header.html.twig') }}
+
+      {{ include('/partials/search.html.twig') }}
+    {{ include('/partials/offCanavas.html.twig') }}
+
+    {{ include('/partials/about/1.html.twig') }}
+
+     {{ include('/partials/footer.html.twig') }}
+</div>
+{% endblock %}
